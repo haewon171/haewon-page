@@ -4,11 +4,11 @@
 
 <!DOCTYPE html>
 <html>
-<title>유기견 보호센터</title>                                      <!-- 1. 제목 수정-->
+<title>유기견 보호소</title>                                      <!-- 1. 제목 수정-->
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-    </style>
+  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital@1&family=Amatic+SC:wght@700&family=Annie+Use+Your+Telescope&family=Bad+Script&family=Cabin+Sketch:wght@700&family=Coming+Soon&family=Gaegu&family=Josefin+Slab:ital,wght@1,600&family=Julius+Sans+One&family=Shadows+Into+Light+Two&family=Waiting+for+the+Sunrise&family=Yomogi&family=Zen+Loop&display=swap');
+  </style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,14 +16,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="강아지 아이콘.ico">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family:  'Roboto', sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Julius Sans One', sans-serif;}
 body, html {
     height: 100%;
     color: rgba(243, 191, 21, 0.856);
     line-height: 1.8;
 }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
+
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -52,6 +52,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
     min-height: 400px;
 }
 
+.bgimg-4 {
+    background-image: url("애옹.jpg");
+    min-height: 400px;
+}
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 .w3-padding-large {width : 150px;}
@@ -75,11 +80,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
                                                                 <!-- 3. 메뉴수정 -->
     
                                                                 
-    <a href="#home" class="w3-bar-item w3-button w3-text-green"><i class="fa fa-home"></i> HOME</a>
-    <a href="#보호소 소개" class="w3-bar-item w3-button w3-hide-small w3-text-green"><i class="fa fa-building"></i> 보호소 소개</a>
-    <a href="#무료분양" class="w3-bar-item w3-button w3-hide-small w3-text-green"><i class="fa fa-paw"></i> 무료분양</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-text-green"><i class="fa fa-phone"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-yellow">
+    <a href="#home" class="w3-bar-item w3-button w3-text-black w3-hover-text-green w3-hover-white"><i class="fa fa-home"></i> HOME</a>
+    <a href="#보호소 소개" class="w3-bar-item w3-button w3-hide-small w3-text-black w3-hover-text-green w3-hover-white"><i class="fa fa-building"></i> 보호소 소개</a>
+    <a href="#무료분양" class="w3-bar-item w3-button w3-hide-small w3-text-black w3-hover-text-green w3-hover-white"><i class="fa fa-paw"></i> 무료분양</a>
+    <a href="#보호소 후기" class="w3-bar-item w3-button w3-hide-small w3-text-black w3-hover-text-green w3-hover-white"><i class="fa fa-comments"></i> 보호소 후기</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-text-black w3-hover-text-green w3-hover-white"><i class="fa fa-phone"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-text-black w3-hover-text-green w3-hover-white">
       <i class="fa fa-home"></i>
     </a>
   </div>
@@ -91,6 +97,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#보호소 소개" class="w3-bar-item w3-button" onclick="toggleFunction()">보호소 소개</a>
     <a href="#무료분양" class="w3-bar-item w3-button" onclick="toggleFunction()">무료분양</a>
+    <a href="#보호소 후기" class="w3-bar-item w3-button" onclick="toggleFunction()">보호소 후기</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -124,23 +131,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
     <!-- Hide this text on small devices -->
                                                                        <!-- 7. 자기소개  -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p class="w3-text-green">보호소 시설</p>
-        <p>저희 보호소는 보호소와 카페 그리고 미용샵 애견 호텔을</p>
-        <p>병행으로 하는 보호소 입니다</p>
+        <p class="w3-text-green" style="font-size: 20px;">보호소 시설</p>
+        <p></p>안락사 없는 사설 보호소 입니다.</p>
+        <p style="font-size: 10px;" >저희 보호소는 보호소와 카페 그리고 미용샵 애견 호텔을</p>
+        <p style="font-size: 10px;">병행으로 하는 보호소 입니다</p>
         <p class="w3-text-white">빈칸^3^</p>
-        <p class="w3-text-green">Protection Center & Hotel</p>
-        <a href="https://sites.google.com/view/haewon-page/%ED%99%88" target="_self"><button class="w3-button w3-padding-large w3-light-grey w3-hover-pale-yellow w3-sand" style="margin-top:60px">보호소</button></a>
+        <p class="w3-text-green" style="font-size: 18px;">Protection Center & Hotel</p>
+        <a href="https://sites.google.com/view/dog-and-cat-shelter-/%ED%99%88" target="_self"><button class="w3-button w3-padding-large w3-light-grey w3-hover-pale-yellow w3-sand" style="margin-top:60px">보호소</button></a>
         <a href="https://sites.google.com/view/cat-and-dog-hotel/%ED%99%88" target="_self"><button class="w3-button w3-padding-large w3-light-grey w3-hover-pale-green w3-sand" style="margin-top:60px">애견 호텔</button></a>
         <p class="w3-text-white">빈칸^3^</p>
-        <p class="w3-text-green">cafe & beauty shop</p>
+        <p class="w3-text-green" style="font-size: 18px;">cafe & beauty shop</p>
         <a href="https://sites.google.com/view/haewon-cafe/%ED%99%88" target="_self"><button class="w3-button w3-padding-large w3-light-grey w3-hover-pale-green" style="margin-top:60px"><i class="fa fa-coffee"></i> 카페 <i class="fa fa-coffee"></i></button></a>
         <a href="https://sites.google.com/view/dog-and-cat-beauty-shop/%ED%99%88" target="_self"><button class="w3-button w3-padding-large w3-light-grey w3-hover-pale-yellow" style="margin-top:60px"><i class="fa fa-cut"></i> 미용샵 <i class="fa fa-cut"></i></button></a>
     </div>
   </div>
                                                                        <!-- 8. 그래프 수정 -->
   
-  <p class="w3-large w3-center w3-padding-16 w3-text-green">보호소 만족도</p>
-  <p class="w3-large w3-center w3-padding-16">이 수치는 100% 설문조사를 통해 나타난 결과로 아이들을 믿고 맡기셔도 됩니다.</p>
+  <p class="w3-large w3-center w3-padding-16 w3-text-green" style="font-size: 20px;" >보호소 만족도</p>
+  <p class=" w3-center w3-padding-16" style="font-size: 12px;">이것은 100% 설문조사를 통해 나타낸 수치 입니다.</p>
   <p class="w3-wide">시설</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-green"  style="width:98.7%">98.7%</div>
@@ -157,7 +165,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center w3-hover-green" style="width:94.5%">94.5%</div>
   </div>
- 
+  <a href="https://forms.gle/F2dx3TLzkoHVxjcx8" target="_blank"><button class="w3-center w3-button w3-padding-large w3-light-grey w3-hover-pale-yellow" style="margin-top:30px"><i class="fa fa-check-square"></i> 만족도 조사</button></a>
+
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -172,7 +181,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
 <div class="w3-content w3-container w3-padding-64" id="무료분양">
   <h3 class="w3-center w3-text-green">무료분양</h3>
   <p class="w3-center"><em>매년 버려지는 유기견의 수 10만 마리, 반려동물 입양은 신중히 결정하세요.<br> </em></p><br>
-  <p class="w3-center"><em>보호소 입소 신청은 홈페이지 번호나 직접 보호소에 방문하여 신청해주세요.<br> </em></p><br>
+  <p class="w3-center" style="font-size: 12px;"><em><a href="#contact" class="w3-hover-white w3-button w3-hover-text-green" onclick="toggleFunction()">보호소 입소 신청은 홈페이지 번호나 직접 보호소에 방문하여 신청해주세요.</a><br> </em></p><br>
 
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
@@ -196,13 +205,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+     <span class="w3-xxlarge w3-text-white w3-wide">review</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-                                                                                <!-- 10. 본인 인적사항 수정!!! -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-content w3-container w3-padding-64" id="보호소 후기">
+  <h3 class="w3-center  w3-text-green">보호소 후기</h3>
+  <p class="w3-center"><em>저희 보호소에서 아이들을 입양한 분들의 현실적인 후기입니다</em></p>
+</div>
+
+<img src="다.PNG"
+</div>                                                            
+  <p class="w3-text-white">빈칸^3^</p>
+  <p class="w3-text-white">빈칸^3^</p>
+ <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center w3-text-green">WAY TO COME</h3>
   <p class="w3-center"><em>
     Decide carefully when adopting a dog or cat</em></p>
@@ -219,7 +236,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
         <i class="fa fa-envelope fa-fw w3-text-pale-green w3-hover-text-green w3-xlarge w3-margin-right"></i> Email : haewon_1106@naver.com<br>
         <i class="fa fa-instagram fa-fw w3-text-pale-green w3-hover-text-green w3-xlarge w3-margin-right"></i> Instagram : haeown_171 <br>
         <i class="fa fa-calendar fa-fw w3-text-pale-green w3-hover-text-green w3-xlarge w3-margin-right"></i> reservation : contact the number on the website <br>
+
       </div>
+      <p class="w3-text-white">빈칸^3^</p>
+
       <div class="Pale Yellow"></div><p><i class="fa fa-dollar"></i></i> 카페와 미용샵 그리고 애견 호텔의 모든 수익은 유기견 & 유기묘 케어에 사용됩니다 <i class="fa fa-dollar"></i></p>
     </div>
   </div>
@@ -228,7 +248,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Shadows Into Light', cursive;}
 
 <!-- Footer -->
 <footer class="w3-center w3-green w3-padding-64 w3-opacity ">
-  <a href="#home" class="w3-button w3-pale-yellow"><i class="fa fa-chevron-up w3-margin-right"></i>맨 위로</a>
+  <a href="#home" class="w3-button w3-pale-yellow w3-hover-yellow w3-hover-text-black"><i class="fa fa-chevron-up w3-margin-right w3-hover-text-black"></i>맨 위로</a>
 </footer>T
 
 <!-- Add Google Maps -->                                                        <!-- 11. 구글맵 수정 부분!!! -->
